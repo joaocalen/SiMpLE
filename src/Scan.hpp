@@ -45,7 +45,6 @@ class Scan
          */
         void readScan(std::string fileName);
 
-    protected:
         // Point cloud subsample radius.
         double subsampleRadius_;
         
@@ -74,7 +73,6 @@ class Scan
          */
         void convertToPointCloudKdTree_(std::vector<Eigen::Vector4d> &pts);
 
-    private:
         // Boolean to apply the correcttion factor to the KITTI scans.
         bool kitti_;
 
